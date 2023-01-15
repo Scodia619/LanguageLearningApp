@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+.score{
+    color: white;
+    text-align: center;
+}
+
+.problem{
+    width:100vw;
+    height:15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box{
+    background-color: white;
+    width: 150px;
+    height: 80%;
+    text-align: center;
+}
+
+.answers{
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+
+.buttons{
+    display: flex;
+    width: 550px;
+    height: 35px;
+    left: -50px;
+}
+
+.button{
+    display: flex;
+    background-color: rgb(141, 141, 141);
+    width: 32%;
+    height: 35px;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.button:hover{
+    background-color: rgb(109, 109, 109);
+}

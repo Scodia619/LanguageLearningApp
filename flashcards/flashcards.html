@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Language Learning App</title>
+    <title>Flashcard Game</title>
 
     <link rel="stylesheet" href="styles.css">
 
@@ -15,14 +15,19 @@
 
 </head>
 <body>
+    <div class="score"><h2 id="scoreBoard">Score: 0</h2></div>
     <div class="flash">
         <div class="front"><p id="word"></p></div>
     </div>
     <div class="answers">
         <div class="flip" onclick="flip()">Flip Me</div>
-        <div class="buttons"></div>
+        <div class="buttons">
+            <div class="button" id="left" onclick="checkAnswer('left')">Thank You!</div>
+            <div class="button" id="middle" onclick="checkAnswer('middle')">Car</div>
+            <div class="button" id="right" onclick="checkAnswer('right')">Hello</div>
+        </div>
     </div>
 
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

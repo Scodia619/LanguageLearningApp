@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Numbers Game</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <div class="score"><h2 id="scoreBoard">Score: 0</h2></div>
+    <div class="problem">
+        <div class="box"><h1 id="num1"></h1></div>
+        <div class="box"><h1 id="sign"></h1></div>
+        <div class="box"><h1 id="num2"></h1></div>
+        <div class="box"><h1>=</h1></div>
+        <div class="box" id="solution-box"><h1 id="solution">?</h1></div>
+    </div>
+    <div class="answers">
+        <div class="buttons">
+            <div class="button" id="left" onclick="checkAnswer('left')">lua</div>
+            <div class="button" id="middle" onclick="checkAnswer('middle')">sefulu</div>
+            <div class="button" id="right" onclick="checkAnswer('right')">fasefulu tasi</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,32 +1,109 @@
 body{
-    background-color: black;
+    margin:0px;
     font-family: 'Indie Flower', cursive;
 }
 
-.flash{
-    height:300px;
-    width:300px;
-    background-color: antiquewhite;
+.nav{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    background-color: black;
+    width:100vw;
+    height:15vh;
+    color: white;
+}
+
+.app-title{
+    margin-left: 1em;
+}
+
+.settings{
+    display: flex;
+    justify-content: space-around;
+    width:10vw;
+    justify-items: center;
     align-items: center;
-    font-size: 50px;
-    border-top-left-radius: 20%;
-    border-bottom-right-radius: 20%;
-    border: 2px solid red;
 }
 
-.front{
-    color: blue;
+.circle{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display:flex;
 }
 
-.flip{
+img{
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px white solid;
+}
+
+.games{
     margin-top: 1em;
-    background-color: gray;
-    width: 300px;
-    height: 35px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 150%;
-    font-weight: bold;
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    justify-content: space-around;
+}
+
+.game{
+    margin: auto;
+    background-color: black;
+    width: 20%;
+    height: 95%;
+    border-radius: 2em;
+    border: 2px white solid;
+    color: white
+}
+
+.game-title{
+    margin-left: 1em;
+    position: relative;
+    top: -10px;
+}
+
+.description{
+    margin-left: 1em;
+    position: relative;
+    top: -25px;
+    width: 95%;
+}
+
+.highscore{
+    margin-left: 1em;
+    position: relative;
+    top: -40px;
+}
+
+.flashcards{
+    background-color: #FF006E;
+}
+
+.flashcards:hover{
+    background-color: #B80050;
+}
+
+.spelling{
+    background-color: #3A86FF;
+}
+
+.spelling:hover{
+    background-color: #005EF5;
+}
+
+.matching{
+    background-color: #8338EC;
+}
+
+.matching:hover{
+    background-color: #6113CD;
+}
+
+.numbers{
+    background-color: #FB5607;
+}
+
+.numbers:hover{
+    background-color: #DD4803;
 }

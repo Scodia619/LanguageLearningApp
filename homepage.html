@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Language Learning App</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <div class="nav">
+        <div class="app-title"><h1>Language Learning App</h1></div>
+        <div class="settings">
+            <div class="language"><span class="circle"><img src="./images/samoa_flag.png" alt=""></span></div>
+            <div class="profile"><h1>Profile</h1></div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="games">
+            <div class="flashcards game" id="game-1">
+                <div class="game-title"><h2>Flash Cards</h2></div>
+                <div class="description"><p>This game quizzes you on different samoan terms 
+                    and if you get stuck you can flip the flashcard. You will gain a point
+                    if you get a correct answer but the score will be reset to 0 if you get
+                    an answer wrong. How high can you score?</p></div>
+                <div class="highscore"><h2>Highscore: 0</h2></div>
+            </div>
+            <div class="spelling game">
+                <div class="game-title"><h2>Spelling</h2></div>
+                <div class="description"><p>This game lets you practice your spelling for this
+                    language because we all know its a difficult language to spell without being
+                    born into it. For every correct answer your score will increase but get an answer
+                    wrong then you will reset your score.</p></div>
+                <div class="highscore"><h2>Highscore: 0</h2></div>
+            </div>
+            <div class="matching game">
+                <div class="game-title"><h2>Matching</h2></div>
+                <div class="description"><p>This game lets you match samoan to english and vice versa.
+                    This will test how well you know each word when mixed with others. You can change
+                    the difficulty if you wish to make it harder or your self. The scoring system is the
+                    same as other games included.
+                </p></div>
+                <div class="highscore"><h2>Highscore: 0</h2></div>
+            </div>
+            <div class="numbers game" id="game-4">
+                <div class="game-title"><h2>Numbers</h2></div>
+                    <div class="description"><p>This game lets you practice maths with multiple difficulties. You
+                        can select to do the math using the digits and type the answer in samoan or see the numbers
+                        in samoan and then anwer in either samoan or english.</p></div>
+                    <div class="highscore"><h2>Highscore: 0</h2></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    var button = document.getElementById("game-1");
+    button.addEventListener("click", function(){
+        document.location.href = "./flashcards/flashcards.html"
+    })
+</script>
+
+<script>
+    var button = document.getElementById("game-4");
+    button.addEventListener("click", function(){
+        document.location.href = "./numbers/numbers.html"
+    })
+</script>
