@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    background-color: black;
+    font-family: 'Indie Flower', cursive;
+}
+
+.back{
+    background-color: white;
+    width: 10vw;
+    margin-left: 1em;
+    margin-top: 1em;
+    border-radius: 1.25em;
+    border: 1px solid black;
+}
+
+.back:hover{
+    box-shadow: 0.25em 0.25em #F5F5F5;
+}
+
+.title{
+    color: white;
+}
+
+.header{
+    width: 52vw;
+    display:flex;
+    justify-content: space-between;
+}
+.game{
+    background-color: white;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-flow:column wrap;
+    align-content: space-between;
+    position: relative;
+    left: 25%;
+    border-radius: 1em;
+}
+
+.box{
+    margin: 0.5em;
+    width:20%;
+    height: 27%;
+    background-color: black;
+    border-radius: 1em;
+    color: white;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

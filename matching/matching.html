@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <div class="header">
+        <div class="back flex-center" id="back-btn">
+            <h1>Back</h1>
+        </div>
+        <div class="title">
+            <h1>Matching</h1>
+        </div>
+    </div>
+    <div class="game">
+        <div class="box flex-center" id="box-1">Moana</div>
+        <div class="box flex-center" id="box-2">Water</div>
+        <div class="box flex-center" id="box-3">Maile</div>
+        <div class="box flex-center" id="box-4">Bread</div>
+        <div class="box flex-center" id="box-5">Falaoa</div>
+        <div class="box flex-center" id="box-6">Dog</div>
+    </div>
+</body>
+
+<script>
+    var button = document.getElementById("back-btn");
+    button.addEventListener("click", function(){
+        document.location.href = "../index.html"
+    })
+</script>
+</html>

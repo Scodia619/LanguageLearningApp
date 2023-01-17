@@ -32,7 +32,7 @@
                     an answer wrong. How high can you score?</p></div>
                 <div class="highscore"><h2>Highscore: 0</h2></div>
             </div>
-            <div class="spelling game">
+            <div class="spelling game"  id="game-2">
                 <div class="game-title"><h2>Spelling</h2></div>
                 <div class="description"><p>This game lets you practice your spelling for this
                     language because we all know its a difficult language to spell without being
@@ -40,7 +40,7 @@
                     wrong then you will reset your score.</p></div>
                 <div class="highscore"><h2>Highscore: 0</h2></div>
             </div>
-            <div class="matching game">
+            <div class="matching game" id="game-3">
                 <div class="game-title"><h2>Matching</h2></div>
                 <div class="description"><p>This game lets you match samoan to english and vice versa.
                     This will test how well you know each word when mixed with others. You can change
@@ -66,11 +66,20 @@
     button.addEventListener("click", function(){
         document.location.href = "./flashcards/flashcards.html"
     })
-</script>
 
-<script>
+    var button = document.getElementById("game-2");
+    button.addEventListener("click", function(){
+        document.location.href = "./spelling/spelling.html"
+    })
+
+    var button = document.getElementById("game-3");
+    button.addEventListener("click", function(){
+        document.location.href = "./matching/matching.html"
+    })
+
     var button = document.getElementById("game-4");
     button.addEventListener("click", function(){
         document.location.href = "./numbers/numbers.html"
     })
 </script>
+

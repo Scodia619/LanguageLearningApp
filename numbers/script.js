@@ -44,6 +44,7 @@ function makeProblem(){
     document.getElementById("solution-box").style.backgroundColor = 'white';
     document.getElementById(position).style.backgroundColor = 'rgb(' + 141 + ',' + 141 + ',' + 141 + ')';
     document.getElementById(correctWordPos).style.backgroundColor = 'rgb(' + 141 + ',' + 141 + ',' + 141 + ')';
+    document.getElementById("solution-box").style.border = ""
     document.getElementById("solution").innerHTML = "?"
 
     //empty array for the fake answers
@@ -122,13 +123,14 @@ function checkAnswer(pos){
         console.log("correct")
         score += 1
         document.getElementById("scoreBoard").innerHTML = "Score: " + score;
-        document.getElementById("solution-box").style.backgroundColor = "green"
+        document.getElementById("solution-box").style.backgroundColor = "#AACC00"
+        document.getElementById("solution-box").style.border = "0.2em solid #BFD200"
     }else{
         console.log("incorrect")
         document.getElementById("solution").innerHTML = NUMBERS[answer]
         //sets the style of incorrect answer
         document.getElementById(pos).style.backgroundColor = "red";
-        document.getElementById(correctWordPos).style.backgroundColor = "green";
+        document.getElementById(correctWordPos).style.backgroundColor = "#AACC00";
     }
 
     //reveals the correct answer
