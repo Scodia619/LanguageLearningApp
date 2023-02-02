@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    background-color: black;
+    font-family: 'Indie Flower', cursive;
+}
+
+.back{
+    background-color: white;
+    width: 10vw;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    border-radius: 1.25em;
+    border: 1px solid black;
+}
+
+.back:hover{
+    box-shadow: 0.25em 0.25em #F5F5F5;
+}
+
+.title{
+    color: white;
+}
+
+.score{
+    color: white;
+}
+
+.header{
+    position: relative;
+    left: 1vw;
+    width: 96vw;
+    display:flex;
+    justify-content: space-between;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-center-top{
+    display: flex;
+    justify-content: center;
+}
+
+.game{
+    width: 70vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 2em;
+    position: relative;
+    left: 15vw;
+}
+
+#spelling-answer{
+    background-color: white;
+    width: 50%;
+    height: 10vh;
+    border: 2px solid black;
+    margin-top: 1em;
+    border-radius: 1em;
+}
